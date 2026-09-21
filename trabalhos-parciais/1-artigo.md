@@ -78,8 +78,6 @@ O grupo deverá entregar:
 - Conclusão;
 - Referências.
 
-### Não será necessária folha de rosto.
-
 ---
 
 # 5. O QUE NÃO É NECESSÁRIO FAZER
@@ -189,14 +187,10 @@ Para esta atividade, deverão ser utilizadas as configurações abaixo.
 
 > **Importante:** para fins desta atividade, sigam as configurações apresentadas neste documento. Não é necessário pesquisar outras configurações de formatação na Internet.
 
----
-
 ## 9.1 Papel
 
 - Tamanho: **A4**
 - Orientação: **Retrato**
-
----
 
 ## 9.2 Margens
 
@@ -206,8 +200,6 @@ Configure:
 - Esquerda: **3 cm**
 - Inferior: **2 cm**
 - Direita: **2 cm**
-
----
 
 ## 9.3 Fonte
 
@@ -276,13 +268,13 @@ Exemplo:
 
 **1 INTRODUÇÃO**
 
-**2 ENGENHARIA DE SOFTWARE E ARQUITETURA DE SOFTWARE**
+**2 DESENVOLVIMENTO**
 
-**3 PRINCÍPIOS SOLID**
+**2.1 Engenharia de Software e Arquitetura de Software**
 
-**3.1 Single Responsibility Principle**
+**2.2 Princípios SOLID**
 
-**3.2 Open/Closed Principle**
+**2.2.1 Single Responsibility Principle**
 
 Os títulos deverão seguir uma hierarquia.
 
@@ -346,25 +338,24 @@ Exemplo:
 ```text
 1 INTRODUÇÃO ........................................ 5
 
-2 ENGENHARIA DE SOFTWARE E ARQUITETURA DE SOFTWARE ... 6
+2 DESENVOLVIMENTO ................................... 6
+2.1 Engenharia de Software e Arquitetura ............ 6
+2.2 Princípios SOLID ................................. 7
+2.2.1 Single Responsibility Principle ............... 7
+2.2.2 Open/Closed Principle .......................... 8
+2.2.3 Liskov Substitution Principle .................. 9
+2.2.4 Interface Segregation Principle ............... 10
+2.2.5 Dependency Inversion Principle ................ 11
+2.3 Clean Architecture .............................. 13
+2.4 Camadas da Clean Architecture ................... 14
+2.5 Regra de Dependência ............................ 16
+2.6 Relação entre SOLID e Clean Architecture ........ 18
+2.7 Exemplos ......................................... 20
+2.8 Figuras e Diagramas ............................. 21
 
-3 PRINCÍPIOS SOLID .................................. 7
-3.1 Single Responsibility Principle ................. 7
-3.2 Open/Closed Principle ........................... 8
-3.3 Liskov Substitution Principle ................... 9
-3.4 Interface Segregation Principle ................ 10
-3.5 Dependency Inversion Principle ................. 11
+3 CONCLUSÃO .......................................... 22
 
-4 CLEAN ARCHITECTURE ................................ 13
-4.1 Conceito ........................................ 13
-4.2 Regra de Dependência ........................... 14
-4.3 Camadas ......................................... 15
-
-5 RELAÇÃO ENTRE SOLID E CLEAN ARCHITECTURE .......... 18
-
-6 CONCLUSÃO .......................................... 21
-
-REFERÊNCIAS ......................................... 22
+REFERÊNCIAS ......................................... 23
 ```
 
 ### IMPORTANTE
@@ -397,13 +388,13 @@ Recomenda-se que a introdução possua aproximadamente **3 a 5 parágrafos**.
 
 # 18. DESENVOLVIMENTO
 
-O desenvolvimento deverá ser dividido em seções e subseções.
+O desenvolvimento deverá apresentar os conceitos relacionados a **SOLID e Clean Architecture**, utilizando pesquisa bibliográfica e fontes confiáveis.
 
-O artigo deverá apresentar os seguintes conteúdos.
+As subseções abaixo deverão ser utilizadas como orientação para a organização do conteúdo.
 
 ---
 
-# 19. ENGENHARIA DE SOFTWARE E ARQUITETURA DE SOFTWARE
+## 18.1 ENGENHARIA DE SOFTWARE E ARQUITETURA DE SOFTWARE
 
 Esta seção deverá servir como uma breve contextualização.
 
@@ -424,15 +415,13 @@ O objetivo é fornecer ao leitor os conceitos necessários para compreender SOLI
 
 ---
 
-# 20. PRINCÍPIOS SOLID
+## 18.2 PRINCÍPIOS SOLID
 
 O artigo deverá apresentar os cinco princípios SOLID.
 
 Cada princípio deverá possuir uma subseção própria.
 
----
-
-## 20.1 SINGLE RESPONSIBILITY PRINCIPLE — SRP
+### 18.2.1 SINGLE RESPONSIBILITY PRINCIPLE — SRP
 
 Explique:
 
@@ -443,9 +432,7 @@ Explique:
 - Relação com manutenção do software;
 - Exemplos para facilitar a compreensão.
 
----
-
-## 20.2 OPEN/CLOSED PRINCIPLE — OCP
+### 18.2.2 OPEN/CLOSED PRINCIPLE — OCP
 
 Explique:
 
@@ -455,9 +442,7 @@ Explique:
 - Problemas que podem surgir quando ele é ignorado;
 - Exemplos.
 
----
-
-## 20.3 LISKOV SUBSTITUTION PRINCIPLE — LSP
+### 18.2.3 LISKOV SUBSTITUTION PRINCIPLE — LSP
 
 Explique:
 
@@ -467,9 +452,7 @@ Explique:
 - Problemas que podem ocorrer quando o princípio é violado;
 - Exemplos.
 
----
-
-## 20.4 INTERFACE SEGREGATION PRINCIPLE — ISP
+### 18.2.4 INTERFACE SEGREGATION PRINCIPLE — ISP
 
 Explique:
 
@@ -478,9 +461,7 @@ Explique:
 - O que significa uma classe não ser obrigada a implementar métodos que não utiliza;
 - Exemplos.
 
----
-
-## 20.5 DEPENDENCY INVERSION PRINCIPLE — DIP
+### 18.2.5 DEPENDENCY INVERSION PRINCIPLE — DIP
 
 Explique:
 
@@ -493,7 +474,7 @@ Explique:
 
 ---
 
-# 21. CLEAN ARCHITECTURE
+## 18.3 CLEAN ARCHITECTURE
 
 Apresente o conceito de Clean Architecture.
 
@@ -510,11 +491,11 @@ O artigo deverá abordar:
 
 ---
 
-# 22. CAMADAS DA CLEAN ARCHITECTURE
+## 18.4 CAMADAS DA CLEAN ARCHITECTURE
 
 Explique as principais camadas da Clean Architecture.
 
-## 22.1 Entities
+### 18.4.1 Entities
 
 Explique:
 
@@ -522,7 +503,7 @@ Explique:
 - Qual é sua responsabilidade;
 - Sua relação com as regras de negócio.
 
-## 22.2 Use Cases
+### 18.4.2 Use Cases
 
 Explique:
 
@@ -530,7 +511,7 @@ Explique:
 - Qual é sua responsabilidade;
 - Sua relação com as regras da aplicação.
 
-## 22.3 Interface Adapters
+### 18.4.3 Interface Adapters
 
 Explique:
 
@@ -540,7 +521,7 @@ Explique:
 - DTOs;
 - Adaptação e transformação de dados.
 
-## 22.4 Frameworks and Drivers
+### 18.4.4 Frameworks and Drivers
 
 Explique:
 
@@ -552,7 +533,7 @@ Explique:
 
 ---
 
-# 23. REGRA DE DEPENDÊNCIA
+## 18.5 REGRA DE DEPENDÊNCIA
 
 Explique a principal ideia da Clean Architecture:
 
@@ -570,7 +551,7 @@ Apresente exemplos conceituais envolvendo:
 
 ---
 
-# 24. RELAÇÃO ENTRE SOLID E CLEAN ARCHITECTURE
+## 18.6 RELAÇÃO ENTRE SOLID E CLEAN ARCHITECTURE
 
 Esta deverá ser uma das principais partes do artigo.
 
@@ -591,7 +572,7 @@ O objetivo é demonstrar que o grupo compreendeu que SOLID e Clean Architecture 
 
 ---
 
-# 25. EXEMPLOS
+## 18.7 EXEMPLOS
 
 Os exemplos são recomendados para facilitar a compreensão dos conceitos.
 
@@ -611,7 +592,7 @@ Os exemplos deverão ser utilizados para **explicar os conceitos**, e não simpl
 
 ---
 
-# 26. FIGURAS E DIAGRAMAS
+## 18.8 FIGURAS E DIAGRAMAS
 
 O artigo poderá utilizar figuras e diagramas.
 
@@ -644,7 +625,7 @@ Se for retirada de outra fonte, a fonte deverá ser indicada corretamente.
 
 ---
 
-# 27. CITAÇÕES
+# 19. CITAÇÕES
 
 As ideias retiradas de livros, artigos, sites ou outras fontes deverão ser devidamente citadas.
 
@@ -654,7 +635,7 @@ Existem três situações que os alunos deverão conhecer.
 
 ---
 
-## 27.1 Citação indireta
+## 19.1 CITAÇÃO INDIRETA
 
 A citação indireta ocorre quando o aluno lê uma ideia de determinado autor e explica essa ideia **com suas próprias palavras**.
 
@@ -668,7 +649,7 @@ Observe que a ideia vem de uma fonte, mas o texto foi escrito pelo aluno.
 
 ---
 
-# 28. CITAÇÃO DIRETA CURTA
+## 19.2 CITAÇÃO DIRETA CURTA
 
 A citação direta curta ocorre quando o aluno copia **literalmente** um trecho da fonte e esse trecho possui até três linhas.
 
@@ -692,7 +673,7 @@ Ou:
 
 ---
 
-# 29. CITAÇÃO DIRETA LONGA
+## 19.3 CITAÇÃO DIRETA LONGA
 
 A citação direta longa é utilizada quando o trecho retirado diretamente da fonte possui **mais de três linhas**.
 
@@ -734,7 +715,7 @@ O artigo deverá ser predominantemente escrito com as palavras dos próprios alu
 
 ---
 
-# 30. REFERÊNCIAS
+# 20. REFERÊNCIAS
 
 Ao final do artigo deverá existir uma seção chamada:
 
@@ -752,37 +733,126 @@ Se uma fonte aparece nas referências, ela deverá ter sido utilizada no artigo.
 
 ---
 
-# 31. EXEMPLOS DE REFERÊNCIAS
+# 21. EXEMPLOS DE REFERÊNCIAS
 
-## 31.1 Livro
+As referências deverão seguir um padrão semelhante aos exemplos abaixo.
 
-Modelo:
+## 21.1 Livro
+
+### Modelo
 
 > SOBRENOME, Nome. *Título do livro*. Edição. Cidade: Editora, ano.
 
-Exemplo:
+### Exemplo
 
 > MARTIN, Robert C. *Clean Architecture: A Craftsman's Guide to Software Structure and Design*. Boston: Pearson, 2018.
 
 ---
 
-## 31.2 Site
+## 21.2 Site
 
-Modelo:
+### Modelo
 
-> AUTOR ou INSTITUIÇÃO. *Título da página*. Disponível em: endereço eletrônico. Acesso em: dia mês ano.
+> AUTOR ou INSTITUIÇÃO. *Título da página*. Nome do site, ano. Disponível em: endereço eletrônico. Acesso em: dia mês ano.
+
+### Exemplo
+
+> FLUTTER. *Flutter documentation*. 2026. Disponível em: https://docs.flutter.dev/. Acesso em: 21 set. 2026.
+
+### Atenção
+
+Quando utilizar um site, não basta colocar somente o endereço eletrônico.
+
+A referência deverá informar, sempre que essas informações estiverem disponíveis:
+
+- Autor ou instituição responsável;
+- Título da página;
+- Nome do site;
+- Ano de publicação ou atualização;
+- Endereço eletrônico;
+- Data de acesso.
 
 ---
 
-## 31.3 Artigo científico
+## 21.3 Artigo científico
 
-Modelo:
+### Modelo
 
-> SOBRENOME, Nome. Título do artigo. *Nome da Revista*, cidade, volume, número, páginas, ano.
+> SOBRENOME, Nome. Título do artigo. *Nome da Revista*, cidade, volume, número, páginas, ano. Disponível em: endereço eletrônico. Acesso em: dia mês ano.
+
+### Exemplo
+
+> BASS, Len; CLEMENTS, Paul; KAZMAN, Rick. Software architecture in practice. *IEEE Software*, v. 20, n. 3, p. 18-20, 2003.
+
+### Atenção
+
+Não confunda **artigo científico** com uma página comum da Internet.
+
+Um artigo científico normalmente apresenta informações como:
+
+- Nome dos autores;
+- Título do artigo;
+- Nome da revista ou periódico;
+- Volume;
+- Número;
+- Páginas;
+- Ano de publicação;
+- DOI ou endereço eletrônico, quando disponível.
 
 ---
 
-# 32. FONTES DE PESQUISA
+## 21.4 Trabalho acadêmico, TCC, dissertação ou tese
+
+### Modelo
+
+> SOBRENOME, Nome. *Título do trabalho*. Ano. Número de páginas. Tipo de trabalho (Curso) — Instituição, Cidade, ano.
+
+### Exemplo
+
+> SILVA, João da. *Aplicação dos princípios SOLID no desenvolvimento de sistemas orientados a objetos*. 2024. 65 f. Trabalho de Conclusão de Curso (Bacharelado em Engenharia de Software) — Universidade X, São Paulo, 2024.
+
+> **Observação:** o exemplo acima é apenas ilustrativo. No trabalho, os alunos deverão utilizar dados reais da fonte consultada.
+
+---
+
+## 21.5 Documento ou documentação técnica online
+
+### Modelo
+
+> AUTOR ou INSTITUIÇÃO. *Título do documento*. Ano. Disponível em: endereço eletrônico. Acesso em: dia mês ano.
+
+### Exemplo
+
+> FLUTTER. *Flutter documentation*. 2026. Disponível em: https://docs.flutter.dev/. Acesso em: 21 set. 2026.
+
+---
+
+## 21.6 Como saber o que colocar nas referências?
+
+Antes de copiar uma fonte para a seção **REFERÊNCIAS**, procure identificar:
+
+| Informação | Onde procurar? |
+|---|---|
+| Autor | Início ou final do documento/página |
+| Título | Título principal da página, artigo ou livro |
+| Ano | Data de publicação ou atualização |
+| Revista | Informações do periódico |
+| Volume e número | Informações do artigo científico |
+| Páginas | Artigos e trabalhos acadêmicos |
+| Editora | Livros |
+| Cidade | Livros e trabalhos acadêmicos |
+| URL | Endereço da página/documento |
+| Data de acesso | Dia em que o aluno consultou a fonte |
+
+### Regra importante
+
+**Não invente nenhuma dessas informações.**
+
+Se determinada informação não estiver disponível na fonte, o aluno deverá utilizar a forma adequada de referência para aquela situação, em vez de inventar dados.
+
+---
+
+# 22. FONTES DE PESQUISA
 
 O grupo deverá utilizar fontes confiáveis.
 
@@ -818,9 +888,11 @@ Uma das principais referências para o tema de Clean Architecture é:
 
 **MARTIN, Robert C. *Clean Architecture: A Craftsman's Guide to Software Structure and Design*. Boston: Pearson, 2018.**
 
+> **Importante:** esta é uma referência recomendada para auxiliar a pesquisa. Os grupos deverão realizar sua própria pesquisa e utilizar outras fontes para fundamentar o artigo.
+
 ---
 
-# 33. CONCLUSÃO
+# 23. CONCLUSÃO
 
 A conclusão deverá apresentar uma síntese dos principais pontos discutidos no artigo.
 
@@ -838,7 +910,7 @@ Ela deverá apresentar uma síntese baseada no conteúdo pesquisado e discutido 
 
 ---
 
-# 34. UTILIZAÇÃO DE INTELIGÊNCIA ARTIFICIAL
+# 24. UTILIZAÇÃO DE INTELIGÊNCIA ARTIFICIAL
 
 Ferramentas de Inteligência Artificial poderão ser utilizadas como **ferramentas auxiliares de pesquisa, compreensão e revisão**.
 
@@ -859,7 +931,7 @@ A utilização de uma ferramenta de Inteligência Artificial **não substitui a 
 
 ---
 
-# 35. PLÁGIO
+# 25. PLÁGIO
 
 Não será permitido:
 
@@ -875,7 +947,7 @@ O plágio poderá resultar na atribuição de **nota zero**, conforme as regras 
 
 ---
 
-# 36. CRITÉRIOS DE AVALIAÇÃO
+# 26. CRITÉRIOS DE AVALIAÇÃO
 
 | Critério | Valor |
 |---|---:|
@@ -890,7 +962,7 @@ O plágio poderá resultar na atribuição de **nota zero**, conforme as regras 
 
 ---
 
-# 37. CHECKLIST FINAL
+# 27. CHECKLIST FINAL
 
 Antes de realizar a entrega, confira todos os itens abaixo.
 
@@ -948,7 +1020,7 @@ Antes de realizar a entrega, confira todos os itens abaixo.
 
 ---
 
-# 38. ORIENTAÇÃO FINAL
+# 28. ORIENTAÇÃO FINAL
 
 O trabalho possui caráter **teórico e bibliográfico**.
 
